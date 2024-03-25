@@ -1,0 +1,142 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Steering Instrument_Cluster Tiptronic ABS MFI_DI
+VAL_TABLE_ ASR 3 "Switching Prohibition" 2 "Downshift" 1 "Shift Map" 0 "Not Required" ;
+VAL_TABLE_ PRNDL 549 "Manual" 296 "Park" 281 "Reverse" 150 "Nuetral" 129 "Drive" ;
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ FDR_System_Regulator_Error : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ACC_Message_ACK : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Error_Brake_Detection : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Acceleration : 0|9@1+ (0.3125,0) [0|0] "M/s^2" Vector__XXX
+ SG_ ACC_Error : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 416 ABS_3: 8 Vector__XXX
+ SG_ Lateral_G : 56|8@1- (1,0) [-128|127] "G" Vector__XXX
+ SG_ TCS_Intervention_Torque : 48|8@1+ (0.39215,0) [0|99.99825] "%" Vector__XXX
+ SG_ TCS_Intervention_Slow : 32|8@1+ (0.39215,0) [0|99.99825] "%" Vector__XXX
+ SG_ TCS_Intervention_Fast : 40|8@1+ (0.39215,0) [0|99.99825] "%" Vector__XXX
+ SG_ Vehicle_Speed_High_Data : 24|8@1+ (1.28,0) [0|326.4] "kph" Vector__XXX
+ SG_ Handbrake_Switch : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Rough_road_suppression_status : 14|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Rough_road_suppression : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDR_lamp2 : 9|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PSM_button_lamp : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDR_intervention : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MSR_Request : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TCS_intervention_ASR_request : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ASR_Control : 5|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Vehicle_Ref_Spd_Low : 17|7@1+ (10,0) [0|127] "kph" Vector__XXX
+ SG_ FDR_Lamp : 7|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Brake_Warning_Light : 10|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Brake_Switch : 11|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Brake_Switch_Inverted : 12|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ABS_Lamp : 8|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ABS_intervention : 2|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ABD_intervention : 3|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 192 SWA: 2 Steering
+ SG_ Steering_Angle : 0|16@1+ (0.0773,-1.1668) [0|0] "°" Vector__XXX
+
+BO_ 1248 DME_4: 8 MFI_DI
+ SG_ Fan_Error : 4|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Limp_Mode : 3|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Oil_Temp : 40|8@1- (0.75,-48) [0|0] "°C" Vector__XXX
+ SG_ Fuel_Used : 16|16@1+ (10,0) [0|0] "liter" Vector__XXX
+ SG_ CEL_Status : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Boost_Pressure : 32|8@1+ (10,0) [0|2550] "bar" Vector__XXX
+
+BO_ 1312 Cluster_2: 6 Instrument_Cluster
+ SG_ Oil_Pressure : 32|8@1+ (0.04,0) [0|0] "bar" Vector__XXX
+ SG_ LightDimmer : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AmbientTemp : 24|8@1+ (0.5,0) [0|0] "-40" Vector__XXX
+ SG_ Cnt1 : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1296 Cluster_1: 8 Instrument_Cluster
+ SG_ Turn_Sig_Right : 21|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Turn_Sig_Left : 20|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Steering_Wheel_Button_Up : 48|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Steering_Wheel_Button_Down : 49|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Tempomat_Button : 23|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Vehicle_Speed : 0|16@1+ (0.005,-20) [-20|307.675] "kph" Vector__XXX
+
+BO_ 1185 ABS_2: 5 ABS
+ SG_ Brake_Offset m1 : 32|8@1+ (0.1,0) [0|0] "" Vector__XXX
+ SG_ Brake_Normal m0 : 32|8@1+ (0.1,0) [0|0] "" Vector__XXX
+ SG_ MuxABS M : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1088 Tiptronic: 8 Tiptronic
+ SG_ PRNDL : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 680 ABS_1: 8 ABS
+ SG_ WheelSpeed_RR : 48|16@1+ (0.0052184440687165,-1.63380090592189) [0|0] "kph" Vector__XXX
+ SG_ WheelSpeed_RF : 16|16@1+ (0.0052184440687165,-1.63380090592189) [0|0] "kph" Vector__XXX
+ SG_ WheelSpeed_LR : 32|16@1+ (0.0052184440687165,-1.63380090592189) [0|0] "kph" Vector__XXX
+ SG_ WheelSpeed_LF : 0|16@1+ (0.0052184440687165,-1.63380090592189) [-1.63380090592189|340.356931137414] "kph" Vector__XXX
+
+BO_ 664 DME_3: 8 MFI_DI
+ SG_ TPS_2 : 32|8@1+ (0.390625,0) [0|0] "%" Vector__XXX
+ SG_ TPS_1 : 16|8@1+ (0.390625,0) [0|99.609375] "%" Vector__XXX
+ SG_ Speed : 56|8@1+ (1,0) [0|255] "kph" Vector__XXX
+ SG_ IAT : 8|8@1+ (0.75,-48) [-48|143.25] "°C" Vector__XXX
+ SG_ Barometric_Pressure : 40|8@1+ (5,0) [0|1275] "bar" Vector__XXX
+
+BO_ 649 DME_2: 8 MFI_DI
+ SG_ Tempomat_Active : 22|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Coolant_Level_Switch : 16|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Coolant_Temp : 8|8@1+ (0.75,-48) [-48|143.25] "°C" Vector__XXX
+
+BO_ 640 DME_1: 8 MFI_DI
+ SG_ TPS : 40|8@1+ (0.39215,0) [0|255] "%" Vector__XXX
+ SG_ RPM : 16|16@1+ (0.25,0) [0|16383.75] "rpm" Vector__XXX
+ SG_ APP_2 : 56|8@1+ (1,0) [0|0] "%" Vector__XXX
+ SG_ APP_1 : 32|8@1+ (1,0) [0|255] "%" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 3221225472 ACC_Message_ACK "1 = message implausible
+";
+CM_ SG_ 3221225472 Error_Brake_Detection "1 = error";
+CM_ SG_ 3221225472 ACC_Error "1 = error";
+CM_ SG_ 416 Vehicle_Ref_Spd_Low "Reference speed refers to a fixed tire circumference of 1.938m for ASR5.3 and 2.00m for FDR5.3/5.7 and ASR5.7";
+CM_ SG_ 1296 Vehicle_Speed "Reference speed refers to a fixed tire circumference of 1.938m for ASR5.3 and 2.00m for FDR5.3/5.7 and ASR5.7";
+CM_ SG_ 1088 PRNDL "P=128 , R=119 , N=96 , D=81, M=225";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "CAN";
+VAL_ 416 ASR_Control 3 "Switching Prohibition" 2 "Downshift" 1 "Shift Map" 0 "Not Required" ;
+
