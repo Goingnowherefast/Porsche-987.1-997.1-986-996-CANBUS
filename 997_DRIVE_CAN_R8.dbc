@@ -34,27 +34,70 @@ NS_ :
 BS_:
 
 BU_: PAS DIAG KLIMA SCCM PSM DME
+VAL_TABLE_ stat_fgr 3 "Ready" 2 "On_Overdriven" 1 "On" 0 "Off" ;
 VAL_TABLE_ Drive_Modes 34976 "SportPlus (Lights On)" 32928 "SportPlus (Lights Off)" 2208 "Sport (Lights On)" 2176 "Both Off (Lights On)" 160 "Sport (Lights Off)" 8 "Both Off (Lights Off)" ;
 VAL_TABLE_ PASM 179 "PASM = SPORT" 162 "PASM = SOFT" ;
 VAL_TABLE_ PAS_KeyPosition 2 "Engine Start" 1 "Ignition On" 0 "Ignition Off" ;
 
 
 BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ Brake_Torque_Intervention : 0|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DME4_B7 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DME_MUX2 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
-
-BO_ 1299 DME5: 8 Vector__XXX
- SG_ DME5_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ DME5_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ DME5_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ DME5_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ DME5_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ DME5_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ DME5_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ DME5_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
-
-BO_ 776 DRIVEMODE: 2 Vector__XXX
+ SG_ DME2_B6 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DME_MUX1 : 0|6@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DME2_B5 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DME5_B7 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DME5_B6 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DME5_B5 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DME5_B4 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DME5_B3 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DME5_B2 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DME5_B1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ Drive_Mode : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ DME6_B7 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DME6_B6 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DME6_B5 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DME6_B4 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DME6_B3 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DME6_B2 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DME6_B1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DME6_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PSM4_B1 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PSM4_B7 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PSM4_B6 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PSM4_B5 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PSM4_B4 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PSM4_B3 : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PSM4_B2 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PSM1_B1b6 : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PSM1_B0b2_b3 : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PSM1_B3 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PSM1_B2 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PSM1_B1b0_b2 : 0|3@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PSM1_B0b5_b7 : 0|3@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ KLIMA_B0b4_B0b7 : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ KLIMA_B0_B0b2 : 0|3@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DME4_B2 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Counter3 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DME4_B4 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DME3_B0b6_b7 : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DME3_Gearbox_Trq_Request : 0|8@1+ (0.39215,0) [0|99.99825] "&" Vector__XXX
+
+BO_ 1299 DME5: 5 Vector__XXX
+ SG_ Immoblizer_Challenge : 0|40@1+ (1,0) [0|1099511627775] "" Vector__XXX
+
+BO_ 776 DRIVEMODE: 8 Vector__XXX
+ SG_ Outside_Temp_Unfiltered : 32|8@1+ (0.5,-50) [-50|77.5] "°C" Vector__XXX
+ SG_ High_Beam_Status : 14|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Reverse_Light_Status : 12|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Low_Beam_Status : 11|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Radio_Key : 7|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Wiper_Status : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RT_Rad_Fan_PWM_Status : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LT_Rad_Fan_PWM_Status : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Trunk_Lid_Open : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Sport_Mode : 5|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 1090 PASM: 1 Vector__XXX
  SG_ PASM_Setting_Request : 0|8@1+ (1,0) [0|255] "" Vector__XXX
@@ -82,14 +125,9 @@ BO_ 1643 DME7: 8 Vector__XXX
  SG_ DME7_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 1641 DME6: 8 Vector__XXX
- SG_ DME6_B7 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ DME6_B6 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ DME6_B5 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ DME6_B4 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ DME6_B3 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ DME6_B2 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ DME6_B1 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ DME6_B0 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Denominator_Status_Bit : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Country_Coding : 24|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ Odometer_Total : 0|20@1+ (1,0) [0|1048575] "km" Vector__XXX
 
 BO_ 1816 PSM5: 8 Vector__XXX
 
@@ -98,12 +136,19 @@ BO_ 1818 SCCM3: 8 Vector__XXX
 BO_ 1098 PSM3: 8 Vector__XXX
 
 BO_ 578 DME1: 8 Vector__XXX
+ SG_ HFM_Error : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ GE_Intervention_Status : 6|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Brake_Intervention_Status : 5|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Error_Msg_Brake1 : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Interlock_Switch : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Idle_Increase : 2|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Accel_PDL_Error_Status : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Accel_PDL_Idle : 0|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ DME_APP : 40|8@1+ (0.39215,0) [0|99.99825] "%" Vector__XXX
- SG_ DME1_B7 : 56|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ DME1_B6 : 48|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ DME1_B4 : 32|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ DME1_B1 : 8|8@1+ (1,0) [0|0] "%" Vector__XXX
- SG_ DME1_B0 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Relative_Driver_Desired_TRQ : 56|8@1+ (0.781,0) [0|199.155] "%" Vector__XXX
+ SG_ Mech_Engine_TRQ_Loss : 48|8@1+ (0.39,0) [0|255] "%" Vector__XXX
+ SG_ Interventions_FGR : 32|8@1+ (0.39,0) [0|99.45] "&" Vector__XXX
+ SG_ Actual_Engine_Torque_INT : 8|8@1+ (0.39,0) [0|0] "%" Vector__XXX
  SG_ DME_RPM : 16|16@1+ (0.25,0) [0|0] "rpm" Vector__XXX
 
 BO_ 1282 CLUSTER1: 8 Vector__XXX
@@ -138,14 +183,10 @@ BO_ 194 SCCM1: 8 SCCM
  SG_ SCCM1_B5b0_b3 : 40|4@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 1099 PSM4: 8 PSM
- SG_ PSM4_B1 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Longitudinal_Accel : 56|8@1+ (0.015,-1.8) [-1.8|2.025] "g" Vector__XXX
+ SG_ Yaw_Rate_Signal_Sign : 25|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Yaw_Rate : 16|9@1+ (0.0021326,0) [0|0] "rad/s" Vector__XXX
  SG_ PSM_BrakePressure : 0|8@1+ (1,0) [0|0] "Bar" Vector__XXX
- SG_ PSM4_B7 : 56|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ PSM4_B6 : 48|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ PSM4_B5 : 40|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ PSM4_B4 : 32|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ PSM4_B3 : 24|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ PSM4_B2 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 586 PSM2: 8 PSM
  SG_ PSM2_B6b0 : 48|1@1+ (1,0) [0|0] "" Vector__XXX
@@ -158,15 +199,19 @@ BO_ 586 PSM2: 8 PSM
  SG_ PSM_WheelSpeedFL : 1|15@1+ (0.02,0) [0|0] "km/h" Vector__XXX
 
 BO_ 330 PSM1: 8 PSM
- SG_ PSM1_B1b6 : 14|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ PSM1_B0b2_b3 : 2|2@1+ (1,0) [0|0] "" Vector__XXX
- SG_ PSM1_B0b0 : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ESP_Diag_Mode : 16|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Vref : 17|15@1+ (0.02,0) [0|655.34] "km/h" Vector__XXX
+ SG_ Brake_Fluid_Switch : 14|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ EBV_Error : 10|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ESP_Error : 9|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ABS_Error : 8|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ESP_Control : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ASR_Switching_Influence : 5|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Brake_Intervention_Status : 3|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ABS_Status : 2|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ASR_Requirement : 0|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ PSM_FootBrake2 : 12|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ PSM1_Counter : 48|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ PSM1_B3 : 24|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ PSM1_B2 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ PSM1_B1b0_b2 : 8|3@1+ (1,0) [0|0] "" Vector__XXX
- SG_ PSM1_B0b5_b7 : 5|3@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Engagement_Torque : 48|8@1+ (0.39,0) [0|0] "%" Vector__XXX
  SG_ PSM_TorqueRequestSlow : 32|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ PSM_TorqueRequestFast : 40|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ PSM_LateralAccel : 56|8@1+ (1,0) [0|0] "" Vector__XXX
@@ -174,15 +219,15 @@ BO_ 330 PSM1: 8 PSM
  SG_ PSM_FootBrake : 11|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ PSM_ESPintervention : 4|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ PSM_Disabled : 13|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ PSM_ABSactive : 1|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MSR_Requirement : 1|1@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 1536 KLIMA: 8 KLIMA
- SG_ KLIMA_B0b4_B0b7 : 4|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HVAC_Display_On : 2|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HVAC_Fan_Speed_Increase : 0|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ KLIMA_B7 : 56|8@1+ (1,0) [0|0] ""  DIAG
- SG_ KLIMA_B6 : 48|8@1+ (1,0) [0|0] ""  DIAG
- SG_ KLIMA_B3 : 24|8@1+ (1,0) [0|0] ""  DIAG
+ SG_ KLIMA_B6 : 48|8@1+ (0.5,-50) [-50|77.5] ""  DIAG
+ SG_ KLIMA_B3 : 24|8@1+ (0.5,-50) [0|0] "°C"  DIAG
  SG_ KLIMA_B1b0_B1b3 : 8|4@1+ (1,0) [0|0] ""  DIAG
- SG_ KLIMA_B0_B0b2 : 0|3@1+ (1,0) [0|0] ""  DIAG
  SG_ KLIMA_RefrigerantPressure : 16|8@1+ (0.2,0) [0|51] "Bar"  DIAG
  SG_ KLIMA_RearDefrostButtonState : 12|1@1+ (1,0) [0|0] ""  DIAG
  SG_ KLIMA_InsideTemperature : 40|8@1+ (0.5,-50) [-50|77.5] "C"  DIAG
@@ -208,12 +253,14 @@ BO_ 528 SCCM2: 4 SCCM
  SG_ SCCM_cruiseAway : 11|1@1+ (1,0) [0|0] ""  DIAG
 
 BO_ 1089 DME4: 8 DME
+ SG_ Fuel_Consumption_2 : 24|8@1+ (1,0) [0|255] "µl" Vector__XXX
+ SG_ Boost_Pressure : 32|8@1+ (0.01,0) [0|2.55] "bar" Vector__XXX
+ SG_ Fuel_Consumption_1 : 16|8@1+ (1,0) [0|255] "µl" Vector__XXX
  SG_ DME4_EngineComp_TempSensFaill : 63|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DME4_Engine_Compartment_Temp : 57|6@1- (1,-48) [0|0] "°C" Vector__XXX
  SG_ DME4_Coolant_Level_Switch : 56|1@1- (1,0) [0|0] "" Vector__XXX
  SG_ Oil_Pressure : 48|8@1+ (0.04,0) [0|10.2] "bar" Vector__XXX
- SG_ DME4_B2 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ DME_RaiatorFanSpeedReq : 8|7@1+ (1,0) [0|127] "%"  DIAG
+ SG_ DME_RadFanSpeedReq : 8|7@1+ (1,0) [0|127] "%"  DIAG
  SG_ DME_EngineRunning : 15|1@1+ (1,0) [0|0] ""  DIAG
  SG_ DME_ALERT_ReducedPower : 3|1@1+ (1,0) [0|0] ""  DIAG
  SG_ DME_ALERT_OilTempSensorFailure : 5|1@1+ (1,0) [0|0] ""  DIAG
@@ -223,41 +270,69 @@ BO_ 1089 DME4: 8 DME
  SG_ DME_ALERT_chargingSystem : 7|1@1+ (1,0) [0|0] ""  DIAG
  SG_ DME_ALERT_CEL_Steady : 1|1@1+ (1,0) [0|0] ""  DIAG
  SG_ DME_ALERT_CEL_Flashing : 0|1@1+ (1,0) [0|0] ""  DIAG
- SG_ Counter3 : 24|8@1+ (1,0) [0|255] ""  DIAG
- SG_ DME4_B4 : 32|8@1+ (1,0) [0|0] ""  DIAG
  SG_ DME_OilTemp : 40|8@1+ (0.75,-48) [-48|143.25] "C"  DIAG
 
 BO_ 582 DME3: 8 DME
- SG_ Channel_3 m3 : 56|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ Channel_2 m2 : 56|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ TPS m1 : 56|8@1+ (0.39215,0) [0|99.99825] "%" Vector__XXX
- SG_ Channel_0 m0 : 56|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ DME3_B0b6_b7 : 6|2@1+ (1,0) [0|0] "" Vector__XXX
- SG_ DME3_Trq_Actual : 32|8@1+ (0.39,0) [0|99.45] "%" Vector__XXX
+ SG_ Upshift_Indicator : 55|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Overboost : 15|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ TRQ_Target_Comms_Error : 14|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Gear_Request : 11|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Gear_Requirement : 8|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Ambient_Pressure_Error : 7|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Sport_Mode_Error : 6|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Ignition_Angle m3 : 56|8@1+ (0.75,-96) [-96|95.25] "" Vector__XXX
+ SG_ ECT m2 : 56|8@1+ (1,-40) [0|255] "°C" Vector__XXX
+ SG_ ABS_TPS m1 : 56|8@1+ (0.39215,0) [0|99.99825] "%" Vector__XXX
+ SG_ Calc_LV m0 : 56|8@1+ (0.3937,0) [0|0] "%" Vector__XXX
+ SG_ GB_Trq_Actual : 32|8@1+ (0.39,0) [0|99.45] "%" Vector__XXX
  SG_ DME_KickdownActive : 3|1@1+ (1,0) [0|0] ""  DIAG
  SG_ DME_EngagedGear : 0|3@1+ (1,0) [0|7] ""  DIAG
  SG_ DME_CompressorRunning : 4|1@1+ (1,0) [0|0] ""  DIAG
  SG_ DME_CompressorFault : 5|1@1+ (1,0) [0|0] ""  DIAG
- SG_ Count2 M : 48|8@1+ (1,0) [0|0] ""  DIAG
- SG_ DME_APP_2 : 24|8@1+ (0.39215,0) [0|0] "%"  DIAG
+ SG_ Count2 M : 48|4@1+ (1,0) [0|15] ""  DIAG
+ SG_ Accel_PDL_Angle : 24|8@1+ (0.4,0) [0|99.99825] "%"  DIAG
  SG_ DME3_Ambient_Pressure : 40|8@1+ (5,0) [0|1275] "mbar"  DIAG
- SG_ Target_Trq : 16|8@1+ (0.39,0) [0|99.45] "%"  DIAG
- SG_ DME3_Gearbox_Trq_Request : 8|8@1+ (0.39215,0) [0|99.99825] "&"  DIAG
+ SG_ GB_Target_Trq : 16|8@1+ (0.39,0) [0|99.45] "%"  DIAG
 
 BO_ 581 DME2: 8 DME
- SG_ DME2_B6 : 48|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ DME2_B4 : 32|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ DME2_Trq_Actual : 56|8@1+ (0.39215,0) [0|99.99825] "%"  DIAG
- SG_ DME_MUX1 : 0|6@1+ (1,0) [0|0] ""  DIAG
- SG_ Count1 : 6|2@1+ (1,0) [0|0] ""  DIAG
- SG_ DME2_B3 : 24|8@1+ (1,0) [0|0] ""  DIAG
- SG_ DME2_B5 : 40|8@1+ (1,0) [0|0] ""  DIAG
- SG_ DME2_B2 : 16|8@1+ (1,0) [0|0] ""  DIAG
- SG_ CoolantTemp : 8|8@1+ (0.75,-48) [-48|143.25] "C"  DIAG
+ SG_ Moment_Max_Internal : 48|8@1+ (0.39,0) [0|99.45] "%" Vector__XXX
+ SG_ Moment_Reduce : 40|8@1+ (0.39,0) [0|99.45] "%" Vector__XXX
+ SG_ OBDII_Freeze_Frame : 21|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ E_Throttle_Error_Status : 20|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Sport_Start : 19|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Brake_Light_Switch_Error : 18|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Brake_Light_Switch : 17|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ECT_Sensor_Error : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Cruise_Control_Status : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MUL_Code_3 m3 : 0|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ MUL_Code_2 m2 : 0|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ MUL_Code_1 m1 : 0|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ MUL_Code_0 m0 : 0|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ Idle_Speed_Target : 32|8@1+ (10,0) [0|2550] "rpm" Vector__XXX
+ SG_ Indexed_Target_Torque : 56|8@1+ (0.39215,0) [0|99.99825] "%"  DIAG
+ SG_ Count1 M : 6|2@1+ (1,0) [0|0] ""  DIAG
+ SG_ Moment_Base : 24|8@1+ (0.39,0) [0|99.45] "%"  DIAG
+ SG_ CoolantTemp : 8|8@1+ (0.75,-48) [-48|143.25] "°C"  DIAG
 
 
 
 CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 3221225472 DME_MUX1 "Multiplexer 0 is reserved, 1 indicates engine type (below), 2 indicates gearbox type (below). 
+
+Mux = 1
+0=3.4L
+1=3.2L
+3=Turbo
+4=2.7L
+5=3.6L
+
+Mux = 2
+0=manual
+1=automatic
+2=CVTip";
+CM_ SG_ 3221225472 Counter3 "0-255";
+CM_ SG_ 1299 Immoblizer_Challenge "Original = Challenge Wegfahrsperre
+Translation = Challenge immobilizer";
 CM_ BO_ 1814 "1 Hz, This is the Motronic Software version
 
 987 Coding: 
@@ -277,11 +352,34 @@ CM_ BO_ 1643 "1 Hz, Chassis number encoded as BCD and ASCII";
 CM_ BO_ 1641 "1 Hz 
 
 Country code, 0 for Germany, 16 for UK";
-CM_ SG_ 578 DME1_B1 "TPS or APP";
+CM_ SG_ 1641 Odometer_Total "Odometer_Total";
+CM_ SG_ 578 HFM_Error "Original = HFM-Fehler
+Translation = HFM error";
+CM_ SG_ 578 GE_Intervention_Status "Original = Quittung GE-Eingriff
+Translation = Receipt of GE intervention";
+CM_ SG_ 578 Brake_Intervention_Status "Original = Status Brems-Eingriff
+Translation = Brake Intervention Status";
+CM_ SG_ 578 Error_Msg_Brake1 "Original = Fehler Botschaftszähler BREMSE_1
+Translation = Error message counter BRAKE_1";
+CM_ SG_ 578 Interlock_Switch "Original = Schalter Interlock
+Translation = Interlock Switch";
+CM_ SG_ 578 Idle_Increase "Original = Leerlaufanhebung
+Translation = Idle Increase";
+CM_ SG_ 578 Accel_PDL_Error_Status "Original = Fehlerstatus Fahrpedal
+Translation = Accelerator Pedal Error Status";
+CM_ SG_ 578 Accel_PDL_Idle "Original = Fahrpedal in Leerlauf
+Translation = Accelerator Pedal at Idle";
+CM_ SG_ 578 Interventions_FGR "Original = Inneres Moment ohne ext. Eingriffe mit FGR
+Translation = inner momentum without external force from Fermi's Golden Rule ";
+CM_ SG_ 578 Actual_Engine_Torque_INT "TPS or APP";
 CM_ SG_ 194 SCCM_SteeringAngleSign "1=Steering right
 0=Steering left";
 CM_ SG_ 194 SCCM_SteeringAngleRateSign "1=turning wheel CW
 0=turning wheel CCW";
+CM_ SG_ 330 ASR_Switching_Influence "Original = ASR-Schaltbeeinflussung
+Translation = ASR switching influence";
+CM_ SG_ 330 Brake_Intervention_Status "Original = Status Brems-Eingriff
+Translation = Brake Intervention Status";
 CM_ SG_ 1536 KLIMA_RefrigerantPressure "high side refrigerant pressure";
 CM_ SG_ 1536 KLIMA_RearDefrostButtonState "this signal follows the immediate state of the rear defroster button on the climate control module. Its remains high while the button is pressed, and goes low when the button is released.";
 CM_ SG_ 1536 KLIMA_InsideTemperature "cabin temperature as measured by the climate control unit";
@@ -334,7 +432,9 @@ Display bars - Reported Value (DEC)
 18	250
 19	250
 ";
-CM_ SG_ 1089 DME_RaiatorFanSpeedReq "fan speed request to front control module, response time varies and has been observed as high as 20s";
+CM_ SG_ 1089 Fuel_Consumption_2 "Fuel consumption in micro-liters";
+CM_ SG_ 1089 Fuel_Consumption_1 "Fuel consumption in micro-liters";
+CM_ SG_ 1089 DME_RadFanSpeedReq "fan speed request to front control module, response time varies and has been observed as high as 20s";
 CM_ SG_ 1089 DME_EngineRunning "signal is present when the engine is running faster than 40 RPM
 this cluster go into a bulb test mode when this bit is not set
 unclear what other components in the vehicle a recievers of this signal";
@@ -349,24 +449,17 @@ CM_ SG_ 1089 DME_ALERT_CEL_Steady "triggers cluster text: check engine visit wor
 triggers cluster CEL light, stays on steady";
 CM_ SG_ 1089 DME_ALERT_CEL_Flashing "triggers cluster text: check engine visit workshop
 triggers cluster CEL light, flashes";
-CM_ SG_ 1089 Counter3 "0-255";
-CM_ SG_ 582 DME_KickdownActive "<not verified>";
+CM_ SG_ 582 DME_KickdownActive "Kickdownschalter";
 CM_ SG_ 582 DME_EngagedGear "<not verified> - enumeration unknown";
 CM_ SG_ 582 DME_CompressorRunning "signal is received by the climate control module, in PIWIS this signal is shown as: CAN compressor shutdown. setting this bit as 0=yes (compressor is not running), 1=no (compressor is running)";
 CM_ SG_ 582 DME_CompressorFault "unclear who recieved this signal, its doesnt trigger an obvious response from climate control diagnostic parameters available in PIWIS";
-CM_ SG_ 581 DME_MUX1 "Multiplexer 0 is reserved, 1 indicates engine type (below), 2 indicates gearbox type (below). 
-
-Mux = 1
-0=3.4L
-1=3.2L
-3=Turbo
-4=2.7L
-5=3.6L
-
-Mux = 2
-0=manual
-1=automatic
-2=CVTip";
+CM_ SG_ 581 Moment_Max_Internal "Original = Inneres max. mögliches Moment
+Translation = Internal max. possible moment";
+CM_ SG_ 581 Moment_Reduce "Original = reduzierbares Moment
+Translation = reducible moment";
+CM_ SG_ 581 MUL_Code_1 "Engine Coding";
+CM_ SG_ 581 Moment_Base "Original = Basis-Moment
+Translation = Base moment (moment of inertia?) ";
 BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
 BA_DEF_ BU_  "NmStationAddress" HEX 0 0;
 BA_DEF_  "DBName" STRING ;
@@ -402,7 +495,15 @@ BA_ "GenMsgCycleTime" BO_ 1089 20;
 BA_ "GenMsgSendType" BO_ 1089 0;
 BA_ "GenMsgCycleTime" BO_ 582 10;
 BA_ "GenMsgSendType" BO_ 582 0;
-VAL_ 776 Drive_Mode 34976 "SportPlus (Lights On)" 32928 "SportPlus (Lights Off)" 2208 "Sport (Lights On)" 2176 "Both Off (Lights On)" 160 "Sport (Lights Off)" 8 "Both Off (Lights Off)" ;
+VAL_ 3221225472 Drive_Mode 34976 "SportPlus (Lights On)" 32928 "SportPlus (Lights Off)" 2208 "Sport (Lights On)" 2176 "Both Off (Lights On)" 160 "Sport (Lights Off)" 8 "Both Off (Lights Off)" ;
+VAL_ 776 RT_Rad_Fan_PWM_Status 3 "Not defined" 2 "Error, failsafe set to 0%" 1 "Error, failsafe set to 100%" 0 "No Error" ;
+VAL_ 776 LT_Rad_Fan_PWM_Status 3 "Not defined" 2 "Error, failsafe set to 0%" 1 "Error, failsafe set to 100%" 0 "No Error" ;
 VAL_ 1090 PASM_Setting_Request 179 "PASM = SPORT" 162 "PASM = SOFT" ;
 VAL_ 357 PAS_KeyPosition 2 "Engine Start" 1 "Ignition On" 0 "Ignition Off" ;
+VAL_ 582 Gear_Request 7 "Implausible" 6 "Implausible" 5 "5th Gear" 4 "4th Gear" 3 "3rd Gear" 2 "2nd Gear" 1 "1st Gear" 0 "Passive" ;
+VAL_ 582 Gear_Requirement 7 "Implausible" 6 "Implausible" 5 "5th Gear" 4 "4th Gear" 3 "3rd Gear" 2 "2nd Gear" 1 "1st Gear" 0 "Passive" ;
+VAL_ 582 DME_EngagedGear 7 "Reverse" 6 "6th Gear" 5 "5th Gear" 4 "4th Gear" 3 "3rd Gear" 2 "2nd Gear" 1 "1st Gear" 0 "AT_N_P" ;
+VAL_ 581 Sport_Start 1 "Active" 0 "Inactive" ;
+VAL_ 581 MUL_Code_2 3 "CVTip" 1 "Automatic Transmission" 0 "Hand Switch (Manual?)" ;
+VAL_ 581 MUL_Code_1 7 "GT2" 6 "GT3" 5 "3.6L" 4 "2.7L" 3 "Turbo" 2 "3.8L" 1 "3.2L" 0 "3.4L" ;
 
