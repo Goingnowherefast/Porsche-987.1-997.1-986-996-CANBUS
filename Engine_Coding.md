@@ -1,4 +1,6 @@
-# Multiplexing codes contained in 0x245 indicates engine type - this needs to match the chassis if you want everything to work correctly.  
+# Engine Coding for 0x245
+
+Multiplexing codes contained in 0x245 indicates engine type - this needs to match the chassis if you want everything to work correctly.  
 
 Coding: 
 0x0 - 3.4L (Cayman S, Boxster S)
