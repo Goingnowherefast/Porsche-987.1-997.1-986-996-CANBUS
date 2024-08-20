@@ -7,3 +7,5 @@ The 997 R8 .DBC is to date the most complete .DBC available for this chassis tha
 Please contact me if you find any issues with any of the files or would like to add anything!
 
 Initial Credit: https://911uk.com/threads/997-can-bus-wizards-wanted.97739/page-1
+
+Tips appreciated: https://venmo.com/u/William-Rori
