@@ -1,6 +1,6 @@
 # Porsche-987.1-997.1-986-996-CANBUS
 Here you will find an updated repository of the combined .DBC's for many Porsches including the 997.1, 987.1, 986, and 996 DBW cars. 
-Initial .DBC's for the 987.1 & 997.1 were created from the community and modified/fixed/added by myself using my own reverse engineering and translation from a uncovered Porsche .DBC. Please use VECTOR DB++ (to see multiplexing and value tables) which can be downloaded from the VECTOR download base here: https://www.vector.com/int/en/support-downloads/download-center/#tab=1&pageSize=15&sort=date&order=desc
+Initial .DBC's for the 987.1 & 997.1 were created from the community and modified/fixed/added by myself using my own reverse engineering and translation from a uncovered Porsche .DBC. Please use VECTOR CAN DB++ (to see multiplexing and value tables) which can be downloaded from the VECTOR download base here: https://www.vector.com/int/en/download/candb-31-sp3/
 
 The 997 R8 .DBC is to date the most complete .DBC available for this chassis that I can find online by a longshot. 997.1 R8 .DBC is valid for the 987 as long as you use the correct engine multiplexor code. 
 
